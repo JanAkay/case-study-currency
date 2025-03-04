@@ -31,7 +31,7 @@ def fetch_exchange_rates():
             #parsing
             if source == "fixer":
                 rates = data.get("rates", {})
-                try_rate = rates.get("TRY", 1)  # Default to 1 
+                try_rate = rates.get("TRY", 1)  # Default  1 
             else:  # currencylayer
                 rates = data.get("quotes", {})
                 try_rate = rates.get("USDTRY", 1)  # Default 1
